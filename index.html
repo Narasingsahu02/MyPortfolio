@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Portfolio website of Narasing Sahu, a Full Stack Developer skilled in Java, C, JavaScript, HTML, CSS, and more.">
+    <meta name="keywords" content="Narasing Sahu, Portfolio, Full Stack Developer, Web Development, UI/UX, Android Apps">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b2c649dab0.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo1.png" class="logo">
+            
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">My Work</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full Stack Developer</p>
+            <h1>Hi,I'm <Span>Narasing Sahu </Span><br>From Visakhapatnam</h1>
+        </div>
+        </div>
+    </div>
+<!-- ------------about ----------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/pic.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        Hello! I’m <strong>Narasing Sahu</strong>, an aspiring and results-driven Full-Stack Developer based in Visakhapatnam, Andhra Pradesh. 
+                        With a <strong>Master’s in Computer Applications</strong> from <strong>Andhra University</strong> and a strong academic foundation in Computer Science, 
+                        I have cultivated expertise in programming languages like <strong>Java, C, and JavaScript</strong>, along with web technologies such as <strong>HTML, CSS, PHP, and MySQL</strong>.
+                    </p>
+                    <p>
+                        What excites me most about technology is the challenge of problem-solving and the power of teamwork. 
+                        My academic journey and hands-on experience have allowed me to work on impactful projects, including the <strong>Real Estate Management System</strong>. 
+                        This project stands out as a testament to my ability to design user-friendly, robust, and efficient full-stack solutions.
+                    </p>
+                    <p>
+                        Beyond my technical skills, I bring a well-rounded personality to the table. I enjoy <strong>traveling</strong>, <strong>reading</strong>, 
+                        and playing sports like <strong>cricket</strong> and <strong>badminton</strong>, which keep me balanced and energized. 
+                        My commitment to giving back to the community is reflected in my active involvement in <strong>NSS initiatives</strong> 
+                        and my contributions as a member of the <strong>Wings of Old Association</strong> during my postgraduate studies.
+                    </p>
+                    <p>
+                        I am eager to join dynamic teams where I can learn from seasoned professionals and contribute to meaningful projects. 
+                        With a drive for continuous growth and a collaborative spirit, I am excited to help build innovative solutions that make a positive impact. 
+                        Let’s connect and create something extraordinary together!
+                    </p>
+                    
+                        <div class="tab-titles">
+                            <div class="tab-links active-link" onclick="opentab('skills')">Skills</div>
+                            <div class="tab-links" onclick="opentab('projects')">Projects</div>
+                            <div class="tab-links" onclick="opentab('education')">Education</div>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Programming Languages</span><br>Java,C</li>
+                                <li><span>Front-End Development</span><br>HTML,CSS and JavaScript</li>
+                                <li><span>Database Management</span><br>MySQL,Oracle DB</li>
+                                <li><span>Tools</span><br>MS Office,MS Excel,Eclipse IDE,VS Code</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="projects">
+                            <ul>
+                                <li><span>Real Estate Management System</span><br>Developed a web platform enabling users to find, list, and manage properties efficiently,
+                                     catering to individuals seeking to rent, buy, or sell real estate. The platform provides a seamless and user-friendly experience with
+                                      features like unlimited property listings, session-based property saving, and robust admin functionalities. Users can upload, edit,
+                                       and connect directly with property owners, while administrators maintain control over listings and data management.
+                                    <p>Technologies: HTML, CSS, JavaScript, PHP, MySQL, XAMPP</p></li>
+                                <li><span>Online Bookstore </span><br> Create an online bookstore where users can browse    
+                                    books, add them to a cart, and purchase them. Include user authentication and an admin panel for managing books and orders.  
+                                    <p>Technologies: Core Java, JSP, Servlets, JDBC, MySQL</p> </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2024</span><br>Java Training at Millienium Software Solution.</li>
+                                <li><span>2024</span><br>MCA From Andhra University.</li>
+                                <li><span>2022</span><br>BSc From Andhra University.</li>
+                            </ul>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------------------------services----------------------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Software Development</h2>
+                    <p>We specialize in creating custom software solutions that cater to the unique needs of businesses and individuals. From desktop applications to enterprise-level solutions, we develop reliable, scalable, and secure software that fits your specific requirements. Our approach focuses on building systems that are efficient, user-friendly, and future-proof, ensuring that your business stays ahead in a constantly evolving technological landscape.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-globe"></i>
+                    <h2>Web Development</h2>
+                    <p>Our web development services cover the entire process of building responsive, functional, and visually appealing websites. Whether you're looking to create a personal portfolio, an e-commerce platform, or a content management system, we provide end-to-end solutions that ensure a seamless user experience across all devices. We use modern technologies to deliver fast, secure, and optimized websites that align with your business goals and help you stay competitive in the digital world.</p>
+                        <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>Mobile Application Development</h2>
+                    <p>We offer mobile application development services for both iOS and Android platforms, designing apps that offer smooth user experiences and high functionality. From native apps to cross-platform solutions, we develop apps that are reliable, scalable, and designed to engage users effectively. Our team leverages the latest technologies to ensure that your app is optimized for performance, security, and usability, helping you achieve your business objectives while meeting the needs of your users.</p>
+                        <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<!-- -------------------------------------------portfolio--------------------------------------- -->
+ <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" >
+                <div class="layer">
+                    <h3>Social Media App</h3>
+                    <p>The app connects you to the talented peoples around the world.Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png">
+                <div class="layer">
+                    <h3>Pexels Website</h3>
+                    <p>Provides a wide range of free stock photos and wallpapers for personal use, featuring professional-grade visuals.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png">
+                <div class="layer">
+                    <h3>Online Shopping App</h3>
+                    <p>The app connects you to the talented peoples around the world.Download it from playstore.</p>
+                    <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+ </div>
+<!-- ---------------------------contact----------------------- -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i> narasingsahu002@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> 7659046137</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://x.com/"><i class="fa-brands fa-x-twitter"></i></i></a>
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></i></a>
+                    <a href="https://www.linkedin.com/in/narasingsahu/"><i class="fa-brands fa-linkedin"></i></i></a>
+                </div>
+                <a href="images/CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows=6 placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Narasing Sahu 2024. All Rights Reserved.</i></p>
+    </div>
+ </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (let tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (let tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right ="0";
+        }
+        function closemenu(){
+            sidemenu.style.right ="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwdNWEEevpx7gLJ28mya69br_93kt0UfWHBYUFAiu_xEWU3c042kxa5_Dg_HLMfdyug/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
